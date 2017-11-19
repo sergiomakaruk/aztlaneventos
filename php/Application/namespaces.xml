@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<namespaces>
+	<add name="Core" />
+	<add name="Controller" />
+	<add name="Modelo" />
+	<add name="Entidades" />
+	<add name="Persistencia" />
+	<add name="Repositorio" />
+</namespaces>

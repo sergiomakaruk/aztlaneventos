@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<load>
+	<add name="HX_Fmwk"/>
+	<add name="HX_Culture"/>
+	<add name="HX_Backoffice"/>
+	<add name="HX_Facebook"/>
+	<add name="Application"/>
+	<!-- <add name="Application" rewrite="/config/config.xml"/> -->
+</load>

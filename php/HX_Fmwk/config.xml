@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<add name="version" value="HX.FMWK 1.0" />
+	<add name="culturePath" value="culture/" />
+	<add name="cultureSource" value="xml" />
+	<add name="logFile" value="log/app.csv" />
+	<add name="development" value="true" />
+</config>

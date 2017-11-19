@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^script.js$ script/script_web.php [L]

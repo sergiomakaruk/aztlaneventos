@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<appSettings>
+		<appKeys>
+			<add name="application" value="App" />
+			<add name="url" value="http://www.url.com/app/" />
+		</appKeys>
+		<appConfig>
+			<add name="debug" value="true" />
+			<add name="encrypt" value="false" />
+
+			<add name="tmpDir" value="tmp/" />
+			<add name="templateCompileDir" value="templates_c/" />
+			<add name="templateDir" value="templates/" />
+		</appConfig>
+		<connectionStrings>
+			<add name="default"	value="Drv=MySqli;Server=localhost;Port=3306;Database=azwuser_web;Uid=azwuser_admin;Pwd=Acuario1936BASE" />
+			<add name="usuarios"	value="Drv=MySqli;Server=localhost;Port=3306;Database=azwuser_usuarios;Uid=root;Pwd=" />
+		</connectionStrings>
+	</appSettings>
+	<system>
+		<debug value="true" />
+		<customErrors defaultRedirect="GenericErrorPage.htm" />
+	</system>
+</config>

@@ -1,0 +1,230 @@
+html, body { height: 100%; padding: 0; }
+
+
+@bgbody:#FFF;
+@bordo:#90122a;
+@link:#F05710;
+@linkHover:#FC3F15;
+
+html,body,input,div,button,nav,form,a,span,h1,h2,h3,h4,h5,h6{
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background-color: @bgbody;
+}
+
+a {
+	color: @link;
+}
+
+a:hover {
+	color: @linkHover;
+}
+
+.container{
+	//width: 1001px;
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 1199px) {
+	
+}
+
+nav.header-nav{
+	height: 124px;
+	background-image: url('../../images/bg-header.jpg');
+	background-repeat: repeat-x;
+	border-bottom: 4px solid @bordo;	
+	padding-top: 15px;
+}
+
+.logo{	
+	div{
+		margin-left: 10px;
+			font-weight: bold;		
+			//margin-left: 120px;
+			h1{
+				font-weight: bold;
+				margin-bottom: 0px;
+				padding-top: 15px;
+				margin-top: 0px;
+			}
+			h4{
+				margin-top: 0px;
+			}
+		}
+}
+.slogan{
+	p,h1,h4{
+			margin:0px;
+			font-family: 'Gentium Book Basic', serif;
+		}
+		h1{
+			margin-top: 0px;
+			margin-bottom: 5px;
+			font-weight: 700;
+			font-size: 2em;
+		}
+	//background-color: #666;
+	height: 108px;
+
+	.btn-salir{
+		a{
+		color:black;
+		}
+		margin-top:10px;
+	}
+}
+
+nav.nav-section{
+	h2{
+		margin: 0;	
+		color:white;
+		padding-bottom: 5px;
+		font-weight: 600;
+	}
+	background-color: @bordo;
+	margin-bottom:10px;
+}
+
+#contents{	
+	background-repeat: no-repeat;
+	min-height: 800px;
+}
+
+div.evento{
+	//border-top: 2px solid @bordo;
+	border-bottom: 1px solid @bordo;
+	margin-bottom: 10px;
+	background-color: #f9efd4;
+	&:nth-child(2n+0){
+		background-color: #f3ece0;
+	}
+
+	.titulo,
+	.subtitulo,
+	.fecha,
+	.lugar{
+		margin: 0;
+		padding: 5px;
+	}
+
+	.lugar{
+		margin-bottom: 10px;
+	}
+
+	.titulo{
+		font-weight: 700;
+		margin-top: 20px;
+	}
+	
+	ul.reservas{
+		margin-top: 30px;
+		ul{
+			text-align: center;
+		}
+	}
+
+	li.cantidad{
+		font-size: 3em;
+		font-weight: 800;
+	}
+
+	ul.links{
+		//text-align: left;
+	}
+}
+
+div#lista{
+	td{
+		//text-align: center;
+	}
+}
+
+.footer{
+	margin-top: 20px;
+	.row{
+		padding-top: 5px;
+		font-size: 12px;
+		text-align: center;
+		border-top: 4px solid @bordo;
+	}
+	
+}
+
+.loading{
+	pointer-events:none;
+	opacity: 0.5;
+}
+
+.hide{
+	display: none;
+}
+
+[data-estado="1"]>td
+{
+	background-color: #DFF0D8!important;
+}
+[data-estado="9"]>td,
+[data-estado="8"]>td
+{
+	background-color: #fcf8e3!important;
+}
+
+tr>td{
+	vertical-align: middle;
+}
+
+.acciones{
+	width: 220px;
+}
+
+td.altas-en-charlas,
+td.presentismo{	
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+td.altas-en-charlas.no-anotado,
+td.presentismo.ausente{
+	background-image: url('../../images/cerrar.png');
+}
+
+td.altas-en-charlas.anotado,
+td.presentismo.presente{
+	background-image: url('../../images/ok.jpg');
+}
+
+input.cant-input{
+	width:80px;
+}
+
+.footer-editar{
+	padding:20px;
+}
+
+div.switch-wrapper{
+	height: 30px;
+}
+
+.modal .link-resultado{
+	margin-top:20px;
+}
+
+.modal .view-link input{
+  margin-bottom:15px;
+}
+
+form.login-form{
+	input{
+		padding:25px 10px;
+		margin-bottom:10px;
+	}
+}
+
+.alert{
+	margin-top:20px;
+}
+
