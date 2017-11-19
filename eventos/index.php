@@ -90,11 +90,13 @@
  	<div class="container">
  	<div class="row">
   		<h2 class="pull-left"><span>�ltimos</span> Eventos</h2>
-  		<div class=" pull-right">
+  		<div class="botonera pull-right">
+        <form id="target">
         <input type="text" name="buscador" value="" class="buscador">
-  		  <button type="button" class="btn btn-default btn-lg buscar" style="font-size:20px;" > Buscar</button>
+        <span class="buscar glyphicon glyphicon-search" style="font-size:20px;"></span>
+      </form>
 
-		  <a type="button" class="btn btn-default btn-lg" style="font-size:20px;" href="crear/evento.php"><span class="glyphicon glyphicon-ok-sign" style="font-size:20px;"></span> Crear Nuevo Evento</a>
+		  <a type="button" class="btn btn-default btn-lg"  href="crear/evento.php"><span class="glyphicon glyphicon-ok-sign" style="font-size:20px;"></span> Crear Nuevo Evento</a>
 		</div>
   	</div>
   	</div>

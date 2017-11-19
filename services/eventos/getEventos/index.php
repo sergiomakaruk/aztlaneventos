@@ -6,7 +6,11 @@ class Index extends AppSerializableController {
 
   public function onLoad() {
 
-  	if($this->data->latest == true){
+    if(isset($this->data->search)){
+      ob_clean();
+      echo 'hola';
+  		parent::addToSend(GET_eventos::getLatestEventos($this->data->search),'eventos');
+  	}else	if($this->data->latest == true){
   		parent::addToSend(GET_eventos::getLatestEventos(),'eventos');
   	}
 	else parent::addToSend(GET_eventos::getEventos(),'eventos');

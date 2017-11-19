@@ -8,7 +8,7 @@ app.data.models.EventosModel = app.models.Model.extend({
 		buscar: function($txt){
 			console.log($txt);
 			var $self = this;
-			this.url.eventos.getEventos($txt,function(data){
+			this.url.eventos.buscar($txt,function(data){
 				$self.set('eventos',data.eventos);
 			});
 		},

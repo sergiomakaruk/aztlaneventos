@@ -55,7 +55,14 @@ $(function() {
 	eventos.loadLatetst();
 	$('.buscar').click(function(){
 		eventos.buscar($('.buscador').val());
+		Url.setHash('');
 	});
+
+	$( "form#target" ).submit(function( event ) {
+  eventos.buscar($('.buscador').val());
+  event.preventDefault();
+	Url.setHash('');
+});
 	/*
 $('.btn-ver-todos').click(function(){
 	eventos.loadLatetst();

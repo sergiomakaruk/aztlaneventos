@@ -34,7 +34,7 @@
 		},
 		buscar : function($txt,callback){
 			var params = {
-					url : '../services/eventos/buscar/index.php',
+					url : '../services/eventos/getEventos/index.php',
 					data:{search: $txt},
 					success : function(data) {
 						callback(app.data.PersistentData.parse(data));
