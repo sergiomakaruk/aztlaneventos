@@ -50,6 +50,7 @@ $(function() {
 	sectionManagerModel.registerSections(new app.view.EditarAsistencia(), 'editar-asistencia');
 	sectionManagerModel.registerSections(new app.view.Form(), 'form');
 	sectionManagerModel.registerSections(new app.view.Login({model:eventos}), 'login');
+	sectionManagerModel.registerSections(new app.view.Usuario(), 'usuario');
 
 	eventos.bind('change',startSite);
 	eventos.loadLatetst();

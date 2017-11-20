@@ -15,6 +15,44 @@ class GET_eventos extends DA_Abs{
 		return  $rs->getObjects($sql);
 	}
 
+	public static function setUsuario($id,$estado,$txt){
+		$db=Conexion::getConexion('usuarios');
+		$rs=$db->getRecordset();
+		$sql="UPDATE usuarios
+		SET admitido = '$estado', admitido_txt = '$txt' WHERE idUsuario = $id";
+		//echo $sql;die;
+		try
+		{
+			echo $sql;
+			$db = Conexion::getConexion('usuarios');
+			$db->execute($sql);
+			//return $estado;
+		}
+		catch (Exception $e) {
+			$c = $e->getCode();
+			throw new AppException("setEvento(): Error setUsuarioUPDATEsuario ($c):" . $e->getMessage(), 200);
+		}
+
+		return $estado;
+	}
+
+	public static function getUsuario($id){
+		$db=Conexion::getConexion('usuarios');
+		$rs=$db->getRecordset();
+		$sql="SELECT * FROM usuarios
+		WHERE idUsuario = $id";
+		//echo $sql;die;
+		$usuario =  $rs->getObject($sql);
+
+		$sql="SELECT * FROM reservas
+		JOIN eventos ON reservas.eventos_idEvento = eventos.idEvento
+		WHERE usuarios_idUsuario = $id AND tipoUsuario = 1 ";
+		//echo $sql;die;
+		$usuario->reservas =  $rs->getObjects($sql);
+
+		return $usuario;
+	}
+
 	public static function getHomeEventosAstro(){
 		$db=Conexion::getConexion('usuarios');
 		$rs=$db->getRecordset();

@@ -224,6 +224,54 @@
 	</form>
   </div>
 
+  <div class="usuario-template usuario-tm row" style="display:none;">
+    <h1>HISTORIAL DE USUARIO</h1>
+    <h2 class="nombre"></h2>
+    <div class="row">
+      <div class="col-md-6">
+
+        <h3>DNI: <span class="dni"></span></h3>
+        <h3 class="">EMAIL: <span class="email"></span></h3>
+        <h3 class="">TEL: <span class="telefono"></span></h3>
+        <h3 class="">SITUACIÓN: <span class="situacion"></span></h3>
+      </div>
+      <div class="col-md-6">
+        <div class="col-xs-12">
+        <form class="">
+          <label for=""><input type="checkbox" name="radio-admitido" value="1">
+            Admitido
+          </label>
+
+          <div class="motivo" style="display:none">
+            <label for="">Motivo</label>
+            <textarea class="admitido_txt" rows="8" cols="80"></textarea>
+          </div>
+          </div>
+          <div class="col-xs-12">
+            <button class="btn btn-default user-actualizar" type="button" name="button">Actualizar estado de usuario</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+
+    <table>
+      <tr>
+        <th>Fecha</th>
+        <th>Evento</th>
+        <th>Asistencia</th>
+      </tr>
+      <tbody  class="eventos-user-container">
+
+      </tbody>
+    </table>
+  </div>
+
+  <div id="usuario-container" class="container">
+
+  </div>
+
     <div class="evento-template row" style="display:none;">
 		<div class="col-md-6 col-xs-12">
 			<h3 class="titulo">Nombre de Evento</h3>

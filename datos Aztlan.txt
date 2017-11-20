@@ -1,0 +1,20 @@
+Don Web - 
+user: 22970379 
+pass: non5#6!8wiTh
+
+DHM
+user: dhmcontrol  
+
+pass: 1eOTQ8bTNlCG
+
+FTP
+user: azwuser
+pass: AztlanYogananda1893
+
+Alumnos: 
+user: administracion
+pass: Pitagoras569
+
+Eventos: 
+user: instructores@admin.com
+pass: Malcolmx1925

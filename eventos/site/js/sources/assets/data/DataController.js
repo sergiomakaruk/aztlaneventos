@@ -13,6 +13,26 @@
 				};
 				app.data.Request.post(params);
 		},
+		getUsuario : function(id,callback){
+			var params = {
+					url : '../services/eventos/getUsuario/index.php',
+					data:{id: id},
+					success : function(data) {
+						callback(app.data.PersistentData.parse(data));
+					}
+				};
+				app.data.Request.post(params);
+		},
+		setUsuario : function(id,estado,txt,callback){
+			var params = {
+					url : '../services/eventos/setUsuario/index.php',
+					data:{id: id,estado:estado,txt:txt},
+					success : function(data) {
+						callback();
+					}
+				};
+				app.data.Request.post(params);
+		},
 		getEventos : function(callback){
 			var params = {
 					url : '../services/eventos/getEventos/index.php',
